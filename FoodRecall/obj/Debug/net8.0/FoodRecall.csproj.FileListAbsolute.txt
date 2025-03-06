@@ -28,3 +28,4 @@ c:\dev\waystar\FoodRecall\obj\Debug\net8.0\refint\FoodRecall.dll
 c:\dev\waystar\FoodRecall\obj\Debug\net8.0\FoodRecall.pdb
 c:\dev\waystar\FoodRecall\obj\Debug\net8.0\FoodRecall.genruntimeconfig.cache
 c:\dev\waystar\FoodRecall\obj\Debug\net8.0\ref\FoodRecall.dll
+c:\dev\waystar\FoodRecall\obj\Debug\net8.0\FoodRecall.sourcelink.json

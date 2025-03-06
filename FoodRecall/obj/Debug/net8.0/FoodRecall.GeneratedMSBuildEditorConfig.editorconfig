@@ -9,39 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FoodRecall
 build_property.RootNamespace = FoodRecall
-build_property.ProjectDir = c:\dev\waystar\FoodRecall\
+build_property.ProjectDir = C:\dev\waystar\FoodRecall\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\dev\waystar\FoodRecall
+build_property.MSBuildProjectDirectory = C:\dev\waystar\FoodRecall
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/dev/waystar/FoodRecall/Views/Home/Index.cshtml]
+[C:/dev/waystar/FoodRecall/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/Home/Privacy.cshtml]
+[C:/dev/waystar/FoodRecall/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/Shared/Error.cshtml]
+[C:/dev/waystar/FoodRecall/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/dev/waystar/FoodRecall/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/_ViewImports.cshtml]
+[C:/dev/waystar/FoodRecall/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/_ViewStart.cshtml]
+[C:/dev/waystar/FoodRecall/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/dev/waystar/FoodRecall/Views/Shared/_Layout.cshtml]
+[C:/dev/waystar/FoodRecall/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0o0cetd541

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj": {}
+    "C:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj": {}
   },
   "projects": {
-    "c:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj": {
+    "C:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj",
+        "projectUniqueName": "C:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj",
         "projectName": "FoodRecall",
-        "projectPath": "c:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj",
+        "projectPath": "C:\\dev\\waystar\\FoodRecall\\FoodRecall.csproj",
         "packagesPath": "C:\\Users\\paqog\\.nuget\\packages\\",
-        "outputPath": "c:\\dev\\waystar\\FoodRecall\\obj\\",
+        "outputPath": "C:\\dev\\waystar\\FoodRecall\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paqog\\AppData\\Roaming\\NuGet\\NuGet.Config"
