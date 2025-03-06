@@ -7,15 +7,15 @@
     <form method="post" action="/Home/Index">
         <div class="form-group">
             <label for="startDate">Start Date</label>
-            <input type="date" class="form-control" id="startDate" name="startDate" required>
+            <input type="date" class="form-control" id="startDate" name="startDate" value="@ViewBag.StartDate" required>
         </div>
         <div class="form-group">
             <label for="endDate">End Date</label>
-            <input type="date" class="form-control" id="endDate" name="endDate" required>
+            <input type="date" class="form-control" id="endDate" name="endDate" value="@ViewBag.EndDate" required>
         </div>
         <div class="form-group">
             <label for="limit">Limit</label>
-            <input type="number" class="form-control" id="limit" name="limit" value="@ViewBag.limit" required>
+            <input type="number" class="form-control" id="limit" name="limit" value="@ViewBag.Limit" required min="1" max="100">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using FoodRecall.Service;
 
 namespace FoodRecall.Models;
 
@@ -7,29 +8,33 @@ public class FoodRecallModel
 {
     public FoodRecallModel()
     {
+        Results = [];
     }
 
+    public FoodRecallModel(FoodRecallResults results)
+    {
+        Results = [];
+        foreach (var result in results.Results)
+        {
+            Results.Add(new Result
+            {
+                Classification = result.Classification,
+                Country = result.Country,
+                ClassificationDate = result.ClassificationDate,
+                ProductDescription = result.ProductDescription,
+                ReasonForRecall = result.ReasonForRecall
+            });
+        }
+    }
 
-    [JsonPropertyName("results")]
     public List<Result> Results { get; set; }
 }
 
 public class Result
 {
-
-    [JsonPropertyName("classification")]
-    public string Classification { get; set; }
-
-    [JsonPropertyName("country")]
-    public string Country { get; set; }
-    
-    [JsonPropertyName("center_classification_date")]
-    public string ClassificationDate { get; set; }
-    
-    [JsonPropertyName("product_description")]
-    public string ProductDescription { get; set; }
-    
-
-    [JsonPropertyName("reason_for_recall")]
-    public string ReasonForRecall { get; set; }
+    public string? Classification { get; set; }
+    public string? Country { get; set; }
+    public string? ClassificationDate { get; set; }
+    public string? ProductDescription { get; set; }
+    public string? ReasonForRecall { get; set; }
 }

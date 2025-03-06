@@ -32,10 +32,17 @@ public class HomeController : Controller
         ViewBag.StartDate = startDate.ToString("MM/dd/yyyy");
         ViewBag.EndDate = endDate.ToString("MM/dd/yyyy");
         ViewBag.Limit = limit;
-        var service = new FoodRecallService(_httpClientFactory);
-        var results = await service.GetResults(startDate, endDate, limit);
-
-        return View(results);
+                
+        try
+        {
+            var service = new FoodRecallService(_httpClientFactory);
+            var results = await service.GetResults(startDate, endDate, limit);
+            return View(results);
+        }
+        catch (Exception ex)
+        {
+            return RedirectToAction("Error", new { errorMessage = ex.Message });
+        }
     }
 
     public IActionResult Privacy()
@@ -44,8 +51,11 @@ public class HomeController : Controller
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    public IActionResult Error(string errorMessage)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        Response.StatusCode = 404;
+        return View(new ErrorViewModel { 
+            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier, 
+            ErrorMessage = errorMessage });        
     }
 }

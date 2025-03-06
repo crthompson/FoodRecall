@@ -12,7 +12,7 @@ public class FoodRecallService
     {
         httpClient = httpClientFactory.CreateClient();
     }
-    public async Task<FoodRecallModel> GetResults(DateTime startDate, DateTime endDate, int limit)
+    public async Task<FoodRecallResults> GetResults(DateTime startDate, DateTime endDate, int limit)
     {
         var url = $"https://api.fda.gov/food/enforcement.json?search=report_date:[{startDate:yyyyMMdd}+TO+{endDate:yyyyMMdd}]&limit={limit}";
         
@@ -20,7 +20,7 @@ public class FoodRecallService
         
         var content = await results.Content.ReadAsStringAsync();
         
-        var obj = JsonSerializer.Deserialize<FoodRecallModel>(content);
+        var obj = JsonSerializer.Deserialize<FoodRecallResults>(content);
 
         if(obj == null || content.ToLower().Contains("error"))
         {
