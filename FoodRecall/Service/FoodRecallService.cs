@@ -22,6 +22,10 @@ public class FoodRecallService
         
         var obj = JsonSerializer.Deserialize<FoodRecallModel>(content);
 
+        if(obj == null || content.ToLower().Contains("error"))
+        {
+            throw new Exception("No results found");
+        }   
         return obj;
     }
 }
